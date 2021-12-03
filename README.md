@@ -63,4 +63,15 @@ This is a branch ready to commit and this is the message.
 ### git remote rm [remote name] // you may want to keep the local
 ### git branch -d something-patch-1
 ### git push origin --delete something-patch-1 //delete the branch on github too
+## ========================================
+## from NELSONDIO
+### installing nodejs in wolfsonuser-52nv53c
+### latest version 16.13.1
+### downloaded installer msi => it needs chocolatey => yes
+### after downloading a script to install python and VS Build Tools about 3 Gb
+### if installation fails, update windows, reboot, run again. Find script in start menu under Node.js
+### start 10+35 AM authorize powershell as admin
+1. install python3
+1. install visualstudio2019_BuildTools
 
+### end: 

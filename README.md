@@ -1,77 +1,54 @@
-# hello-world
-This is lemmi edit
-=============
-This is the description of the repository "hello-world".
-=====================
-Following the tips at guides dot github dot com activities hello-world
-===========================
-This is a branch ready to commit and this is the message.
-==================================
+# Astro Starter Kit: Basics
 
-# 12.02.2021
-## This is a fork from nelsondio/hello-world made on the web
-### This is a new entry to commit and to make a pull request
-### patch-1 to fix an error 1001
-### =========================
-### NELSONDIO: steps to get here:
-1) Pull request
-2) create a pull request
-3) nelsondio:master vs wolfsonuser:master there isn't anything to compare since the pull request was automatically merged by nelsondio a few minutes back.
-4) Try switching the base for your comparison: 
-5) base repository nelsondio/hello-world base: master <==== head repository wolfsonuser/hello-world compare: master
-6) with an option: compare across forks. This is the option I selected previously. When I made a pull request, automatically generated a branch patch-1.
-7) After base allowed to merge with head of wolfsonuser, it showed option to delete wolfsonuser/hello-world but a BIGGGG warning in setting, dangerous, risky, be carefull!!!. I authorized since I can write in nelsondio. 
-8) Pending what to do with wolfsonuser/hello-world since master and patch-1 are not merged yet.
-### ==============================
-## Wolfsonuser patch-2 pull request started.
-### follow the steps and see after commiting changes.
-## ====================================
-### it merged automatically with wolsonuser master, but I did not see the fork comparison option
-### start patch-3 pull request to merge wolfsonuser as head and nelsondio master as base
-## ===========================
-### patch-4
-#### nelsondio forgot to merge request
-#### nelsondio quit  and  nothing was merged. 
-#### wolfsonuser could not reopen the pull request.
-#### wolfsonuser began new pull request after committing this
-## =====================================
-## patch-5 from VS Code laptop
-### Clone repository, it asked to login with wolfsonuser and password, even though I created ed25519 keys and added to the account.
-### TODO Edit README from VS code, commit, push to remote rep, make pull request to nelsondio
-## ===========================
+```sh
+npm create astro@latest -- --template basics
+```
 
-## 12.03.2021
-### git clone https://github.com/somebody/something.git // rep you are interested in
-### cd into something
-### git checkout -b something-patch-1
-### make some changes or patch
-### git status
-### git add . 
-### git commit -m "Message patch-1 for instance"
-### git remote -v
-### git push origin something-patch-1
-### create pull request
-#### base rep: somebody/something.git master
-#### head rep: yourfork/something.git master
-### if your pull request is accepted you'll receive an email
-### git branch
-### git checkout master
-### git remote add upstream https://somebody/something.git
-### git fetch upstream
-### git merge upstream/master
-### git push origin master // this is your own fork synced
-### git remote rm [remote name] // you may want to keep the local
-### git branch -d something-patch-1
-### git push origin --delete something-patch-1 //delete the branch on github too
-## ========================================
-## from NELSONDIO
-### installing nodejs in wolfsonuser-52nv53c
-### latest version 16.13.1
-### downloaded installer msi => it needs chocolatey => yes
-### after downloading a script to install python and VS Build Tools about 3 Gb
-### if installation fails, update windows, reboot, run again. Find script in start menu under Node.js
-### start 10+35 AM authorize powershell as admin
-1. install python3
-1. install visualstudio2019_BuildTools
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-### end: 10+57
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

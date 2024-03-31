@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 const pageTitle = "About Me";
 
 const identity = {
@@ -12,6 +13,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
+const base = './'
+const skillColor = 'red'
 ---
 
 <html lang="en">
@@ -20,13 +23,26 @@ const goal = 3;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
+        <title>{base}{pageTitle}</title>
+        <style define:vars={{skillColor}}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: var(---skillColor);
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        <h1>{pageTitle}</h1>
+        <div>
+            <a href="../">Home</a>
+            <a href="./">About</a>
+            <a href="../blog/">Blog</a>
+          </div>
+
+        <h1>{base} {pageTitle}</h1>
         <h2>My Astro Site</h2>
         <p>Here are a few facts about me:</p>
         <ul>
@@ -47,7 +63,7 @@ const goal = 3;
         </ul>
         <p>My skills are:</p>
         <ul>
-            {skills.map((skill) => <li>{skill}</li>)}
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
         {happy && <p>I am happy to be learning Astro!</p>}
 

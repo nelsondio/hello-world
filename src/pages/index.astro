@@ -1,5 +1,6 @@
 ---
 const pageTitle = "Home"
+const base = './'
 ---
 
 <html lang="en">
@@ -8,13 +9,18 @@ const pageTitle = "Home"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
+    <title>{base}{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>{pageTitle}</h1>
+
+    <div>
+      <a href={base}>Home</a>
+      <a href=`${base}about/`>About</a>
+      <a href=`${base}blog/`>Blog</a>
+    </div>
+   
+
+    <h1>{base}{pageTitle}</h1>
     <h2>My Astro Site</h2>
   </body>
 </html>

@@ -55,3 +55,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 
 # Source : docs.astro.build/en/tutorial/2-pages/1 2 3
+
+# LAST SEEN
+1. 3.31.2024 
+1. docs.astro.build/en/tutorial/3-components/3/

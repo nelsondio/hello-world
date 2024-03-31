@@ -27,14 +27,3 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 
- <div>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-    </div>
- <div>
-      <a href=${base}>Home</a>
-      <a href='../../'>Home</a>
-      <a href="../../about/">About</a>
-      <a href="../../blog/">Blog</a>
-    </div>

@@ -1,10 +1,11 @@
 ---
-const pageTitle = "Blog"
-const base = '/canvas_file_cache/dist/'
-const prefix = 'posts/post-'
+import Navigation from "../components/Navigation.astro";
+const pageTitle = "Blog";
+const base = "/canvas_file_cache/dist/";
+const prefix = "posts/post-";
 let num = 1;
-const chapter = [1,2,3]
-let listItems = []
+const chapter = [1, 2, 3];
+let listItems = [];
 // listItems = chapter.map(i => `<li><a href="/posts/post${i}>Post ${i}</a></li>`)
 // listItems = chapter.map(i => (<li><a href="/posts/post-">Post</a></li>))
 // for (let i = 0; i <= chapter.length; i++){
@@ -12,28 +13,28 @@ let listItems = []
 //     return listItems
 // }
 ---
+
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{base}{pageTitle}</title>
   </head>
   <body>
+    <Navigation />
     <div>
-        <a href="../">Home</a>
-        <a href="../about/">About</a>
-        <a href="./">Blog</a>
-      </div>
-   
+      <a href="../">Home</a>
+      <a href="../about/">About</a>
+      <a href="./">Blog</a>
+    </div>
+
     <h1>{base} {pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
 
-    <ul>      
+    <ul>
       <li><a href=`${base+prefix}1/`>Post 1</a></li>
       <li><a href=`${base+prefix}2/`>Post 2</a></li>
       <li><a href=`${base+prefix}3/`>Post 3</a></li>
-
     </ul>
-
   </body>
 </html>
